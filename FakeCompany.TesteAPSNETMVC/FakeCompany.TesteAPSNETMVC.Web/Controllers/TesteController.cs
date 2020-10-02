@@ -17,7 +17,10 @@ namespace FakeCompany.TesteAPSNETMVC.Web.Controllers
         [HttpPost]
         public IActionResult Index(Pessoa pessoa)
         {
-            return View("Saudacao", pessoa);
+            if (ModelState.IsValid)
+                return View("Saudacao", pessoa);
+            else
+                return View(pessoa);
         }
     }
 }
