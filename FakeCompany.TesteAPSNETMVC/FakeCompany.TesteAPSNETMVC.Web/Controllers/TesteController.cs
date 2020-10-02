@@ -15,10 +15,12 @@ namespace FakeCompany.TesteAPSNETMVC.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(IFormCollection formCollection)
+        public IActionResult Index(string nome, int idade)
         {
 
-            ViewBag.Mensagem = formCollection["nome"];
+            ViewBag.Mensagem = nome;
+            ViewBag.Idade = idade;
+            ViewBag.MaiorIdade = idade >= 21 ? "Você é maior de idade" : "Você é menor de idade";
             return View("Saudacao");
         }
     }
