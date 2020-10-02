@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<br />
+<br />
+@using (Html.BeginForm("Index", "Teste", FormMethod.Post))
+{
+    <div class="container">
+        <div class="row  justify-content-center">
+            <div class="col-sm-2">
+                <p class="font-weight-bold"> Digite seu nome:</p>
+                @Html.TextBox("nome", null, new { id = "txbNome", @class = "form-control", placeHolder = "Nome" })
+                @*<p class="font-weight-bold"> Digite seu nome:</p> <input type="text" class="form-control" txtNome" name="nome" placeholder="Nome" autocomplete="off" />*@
+            </div>
+        </div>
+        <br />
+        <div class="row  justify-content-center">
+            <div class="col-sm-2">
+                <input type="submit" class="btn btn-primary btn-md mr-1 font-weight-light" name="btnEnviar" value="Enviar" />
+            </div>
+        </div>
+    </div>
+
+}
