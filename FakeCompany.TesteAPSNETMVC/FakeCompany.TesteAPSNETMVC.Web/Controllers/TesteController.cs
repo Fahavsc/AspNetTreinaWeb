@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using FakeCompany.TesteAPSNETMVC.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FakeCompany.TesteAPSNETMVC.Web.Controllers
@@ -15,13 +15,9 @@ namespace FakeCompany.TesteAPSNETMVC.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(string nome, int idade)
+        public IActionResult Index(Pessoa pessoa)
         {
-
-            ViewBag.Mensagem = nome;
-            ViewBag.Idade = idade;
-            ViewBag.MaiorIdade = idade >= 21 ? "Você é maior de idade" : "Você é menor de idade";
-            return View("Saudacao");
+            return View("Saudacao", pessoa);
         }
     }
 }

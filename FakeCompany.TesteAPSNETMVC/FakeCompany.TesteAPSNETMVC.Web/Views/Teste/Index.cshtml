@@ -1,4 +1,6 @@
-﻿
+﻿@using FakeCompany.TesteAPSNETMVC.Web.Models
+@model Pessoa
+
 @{
     ViewData["Title"] = "Index";
 }
@@ -8,21 +10,32 @@
 <br />
 @using (Html.BeginForm("Index", "Teste", FormMethod.Post))
 {
-<div class="container">
-    <div class="row  justify-content-center">
-        <div class="col-sm-2">
-            <p class="font-weight-bold"> Digite seu nome:</p>
-            @Html.TextBox("nome", null, new { id = "txbNome", @class = "form-control", required="required", placeHolder = "Insira seu nome" })
-            @*<p class="font-weight-bold"> Digite seu nome:</p> <input type="text" class="form-control" txtNome" name="nome" placeholder="Nome" autocomplete="off" />*@
+<div class="container justify-content-center">
+    <div class="row justify-content-center">
+        <div class="">
+            <h4>Digite seus dados:</h4>
         </div>
     </div>
-    <br />
     <div class="row  justify-content-center">
         <div class="col-sm-2">
-            <p class="font-weight-bold"> Digite seu nome:</p>
-            @Html.TextBox("idade", 0, new { id = "txbIdade", @class = "form-control",required = "required", placeHolder = "Insira sua idade", type="number", min = "0", max="150"})
+            @Html.LabelFor(p => p.Nome)
+            @Html.TextBoxFor(p => p.Nome, new { id = "txbNome", @class = "form-control", required = "required", placeHolder = "Insira seu nome" })
         </div>
     </div>
+    
+    <div class="row  justify-content-center">
+        <div class="col-sm-2">
+            @Html.LabelFor(p => p.Idade)
+            @Html.TextBoxFor(p => p.Idade, new { id = "txbIdade", @class = "form-control", required = "required", placeHolder = "Insira sua idade", type = "number", min = "0", max = "150" })
+        </div>
+    </div>
+    <div class="row  justify-content-center">
+        <div class="col-sm-2">
+            @Html.LabelFor(p => p.Endereco)
+            @Html.TextBoxFor(p => p.Endereco, new { id = "txbEndereco", @class = "form-control", required = "required", placeHolder = "Rua XXX, 132", type = "text" })
+        </div>
+    </div>
+
     <br />
     <div class="row  justify-content-center">
         <div class="col-sm-2">
