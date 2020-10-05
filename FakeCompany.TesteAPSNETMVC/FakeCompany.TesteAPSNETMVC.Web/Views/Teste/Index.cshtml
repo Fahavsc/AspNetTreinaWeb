@@ -10,51 +10,52 @@
 <br />
 @using (Html.BeginForm("Index", "Teste", FormMethod.Post))
 {
-@Html.ValidationSummary(true)
-<div class="container justify-content-center">
-    <div class="row justify-content-center">
-        <div class="">
-            <h4>Digite seus dados:</h4>
+    @Html.AntiForgeryToken() //Usado para gerar um token para cada chamada na aplicação
+    @Html.ValidationSummary(true) //Usado para garantir que apenas as informaçoes no bind do controller sejam modificadas
+    <div class="container justify-content-center">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-6">
+                <h4>Digite seus dados:</h4>
+            </div>
         </div>
-    </div>
-    <div class="row  justify-content-center">
-        <div class="col-sm-2">
-            @Html.LabelFor(p => p.Nome)
-            @Html.TextBoxFor(p => p.Nome, new { id = "txbNome", @class = "form-control", placeHolder = "Insira seu nome" })
-            @Html.ValidationMessageFor(p => p.Nome)
+        <div class="row  justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-6">  
+                @Html.LabelFor(p => p.Nome)
+                @Html.TextBoxFor(p => p.Nome, new { id = "txbNome", @class = "form-control", placeHolder = "Insira seu nome" })
+                @Html.ValidationMessageFor(p => p.Nome)
+            </div>
         </div>
-    </div>
 
-    <div class="row  justify-content-center">
-        <div class="col-sm-2">
-            @Html.LabelFor(p => p.Idade)
-            @Html.TextBoxFor(p => p.Idade, new { id = "txbIdade", @class = "form-control", placeHolder = "Insira sua idade", type = "number", min = "0", max = "150" })
-            @Html.ValidationMessageFor(p => p.Idade)
+        <div class="row  justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-6">
+                @Html.LabelFor(p => p.Idade)
+                @Html.TextBoxFor(p => p.Idade, new { id = "txbIdade", @class = "form-control", placeHolder = "Insira sua idade", type = "number", min = "0", max = "150" })
+                @Html.ValidationMessageFor(p => p.Idade)
+            </div>
         </div>
-    </div>
-    <div class="row  justify-content-center">
-        <div class="col-sm-2">
-            @Html.LabelFor(p => p.Endereco)
-            @Html.TextBoxFor(p => p.Endereco, new { id = "txbEndereco", @class = "form-control", placeHolder = "Rua XXX, 132", type = "text" })
-            @Html.ValidationMessageFor(p => p.Endereco)
+        <div class="row  justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-6">
+                @Html.LabelFor(p => p.Endereco)
+                @Html.TextBoxFor(p => p.Endereco, new { id = "txbEndereco", @class = "form-control", placeHolder = "Rua XXX, 132", type = "text" })
+                @Html.ValidationMessageFor(p => p.Endereco)
+            </div>
         </div>
-    </div>
 
-    <div class="row  justify-content-center">
-        <div class="col-sm-2">
-            @Html.LabelFor(p => p.Email)
-            @Html.EditorFor(p => p.Email, new { id = "txbEmail", @class = "form-control", placeHolder = "exemplo@exemplo.com", type = "text" })
-            @Html.ValidationMessageFor(p => p.Email)
+        <div class="row  justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-6">
+                @Html.LabelFor(p => p.Email)
+                @Html.TextBoxFor(p => p.Email, new { id = "txbEmail", @class = "form-control", placeHolder = "exemplo@exemplo.com", type = "text" })
+                @Html.ValidationMessageFor(p => p.Email)
+            </div>
         </div>
-    </div>
 
-    <br />
-    <div class="row  justify-content-center">
-        <div class="col-sm-2">
-            <input type="submit" class="btn btn-primary btn-md mr-1 font-weight-light" name="btnEnviar" value="Enviar" />
+        <br />
+        <div class="row  justify-content-center">
+            <div class="">
+                <input type="submit" class="btn btn-primary font-weight-light" name="btnEnviar" value="Enviar" />
+            </div>
         </div>
-    </div>
 
-</div>
+    </div>
 
 }

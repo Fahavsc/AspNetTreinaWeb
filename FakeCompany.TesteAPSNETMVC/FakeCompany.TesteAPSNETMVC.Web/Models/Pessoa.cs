@@ -33,5 +33,7 @@ namespace FakeCompany.TesteAPSNETMVC.Web.Models
         [DisplayName("E-mail: ")]
         public string Email { get; set; }
 
+        public bool IsAtivo { get; set; }
+
     }
 }

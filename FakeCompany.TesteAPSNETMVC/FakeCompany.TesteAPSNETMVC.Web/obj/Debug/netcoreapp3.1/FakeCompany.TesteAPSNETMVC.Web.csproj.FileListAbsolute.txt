@@ -391,8 +391,9 @@ C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAP
 C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\obj\Debug\netcoreapp3.1\Razor\Views\Teste\Index.cshtml.g.cs
+C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\obj\Debug\netcoreapp3.1\Razor\Views\Teste\Saudacao.cshtml.g.cs
+C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\bin\Debug\netcoreapp3.1\bundleconfig.json
 C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\obj\Debug\netcoreapp3.1\FakeCompany.TesteAPSNETMVC.Web.csproj.CoreCompileInputs.cache
 C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\obj\Debug\netcoreapp3.1\FakeCompany.TesteAPSNETMVC.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\obj\Debug\netcoreapp3.1\FakeCompany.TesteAPSNETMVC.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\obj\Debug\netcoreapp3.1\Razor\Views\Teste\Index.cshtml.g.cs
-C:\Users\f.alves.cirino\Documents\myprojects\aspnetTreinaWeb\FakeCompany.TesteAPSNETMVC\FakeCompany.TesteAPSNETMVC.Web\obj\Debug\netcoreapp3.1\Razor\Views\Teste\Saudacao.cshtml.g.cs

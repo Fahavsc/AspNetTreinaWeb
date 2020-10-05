@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5L/PTefEx6soDXENRpEw95VraP9fK4yQCyG/0fXUs0Kc2ZLVk8IOZgvfOblogUtHHTU5yFJn2MhgyPBDkIVgPw==",
+  "dgSpecHash": "nzntbrxPn/xb7LgLEsw+JesgFJxxmsiI9JJLWD4cWwgopVU6gzgBNMaSaqd8CL/H+FucBcPkgk84A3qNiKLHEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\f.alves.cirino\\Documents\\myprojects\\aspnetTreinaWeb\\FakeCompany.TesteAPSNETMVC\\FakeCompany.TesteAPSNETMVC.Web\\FakeCompany.TesteAPSNETMVC.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\f.alves.cirino\\.nuget\\packages\\buildbundlerminifier\\3.2.449\\buildbundlerminifier.3.2.449.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\f.alves.cirino\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.8\\microsoft.aspnetcore.mvc.razor.extensions.3.1.8.nupkg.sha512",
     "C:\\Users\\f.alves.cirino\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.8\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.8.nupkg.sha512",

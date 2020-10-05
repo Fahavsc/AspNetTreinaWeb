@@ -15,10 +15,14 @@ namespace FakeCompany.TesteAPSNETMVC.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(Pessoa pessoa)
+        [ValidateAntiForgeryToken]//Garantir que sera validado o token de autencação da aplicação toda vez que for chamado o controller
+        public IActionResult Index([Bind("Nome", "Idade", "Endereco","Email")]Pessoa pessoa)
         {
             if (ModelState.IsValid)
+            {
+                pessoa.IsAtivo = true;
                 return View("Saudacao", pessoa);
+            }
             else
                 return View(pessoa);
         }
